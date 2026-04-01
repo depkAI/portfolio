@@ -15,6 +15,7 @@ function HangingSpiderman({ revealed }: { revealed: boolean }) {
         flexDirection: "column",
         alignItems: "center",
         position: "relative",
+        margin: "0 auto",
       }}
     >
       {/* Web strand */}
@@ -157,7 +158,7 @@ export default function ContactSection() {
         }}
       >
         {/* Header */}
-        <div style={{ marginBottom: 48 }}>
+        <div style={{ marginBottom: 48, textAlign: "center" }}>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -198,6 +199,7 @@ export default function ContactSection() {
             gap: 48,
             alignItems: "flex-start",
             flexWrap: "wrap",
+            justifyContent: "center",
           }}
         >
           {/* LEFT SIDE */}
@@ -206,6 +208,8 @@ export default function ContactSection() {
               flex: "0 0 auto",
               display: "flex",
               justifyContent: "center",
+              width: "100%",
+              maxWidth: 300,
             }}
           >
             <AnimatePresence mode="wait">
