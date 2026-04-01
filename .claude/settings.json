@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(rm -rf portfolio-app/.next portfolio-app/node_modules)",
+      "Bash(mkdir -p portfolio-app/src/app portfolio-app/src/components/Hero portfolio-app/src/components/Projects portfolio-app/src/components/Achievements portfolio-app/src/components/About portfolio-app/src/components/Contact portfolio-app/src/components/layout portfolio-app/src/components/ui portfolio-app/src/utils portfolio-app/public/audio)",
+      "Read(//c/Users/deepa/**)",
+      "Bash(npm run:*)"
+    ]
+  }
+}

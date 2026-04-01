@@ -55,7 +55,7 @@ export default function Navbar() {
           borderBottom: scrolled ? "1px solid rgba(226,54,54,0.1)" : "1px solid transparent",
         }}
       >
-        <div className="w-full max-w-[1400px] mx-auto px-12 md:px-20 lg:px-28 flex items-center justify-between h-16">
+        <div className="w-full max-w-[1400px] mx-auto px-4 sm:px-8 md:px-20 lg:px-28 flex items-center justify-between h-16">
 
           {/* Logo */}
           <motion.a

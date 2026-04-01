@@ -394,8 +394,8 @@ export default function ProjectsSection() {
           <div
             style={{
               display: "grid",
-              gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
-              gap: 28,
+              gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
+              gap: "clamp(16px, 4vw, 28px)",
             }}
           >
             {projects.map((project, index) => (

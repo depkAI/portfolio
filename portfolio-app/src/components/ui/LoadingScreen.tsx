@@ -128,7 +128,7 @@ export default function LoadingScreen() {
                       border: "1px solid rgba(226,54,54,0.3)",
                       borderRadius: 6,
                       padding: "12px 24px",
-                      width: 280,
+                      width: "clamp(220px, 75vw, 280px)",
                       letterSpacing: "0.1em",
                     }}
                     onFocus={(e) => {

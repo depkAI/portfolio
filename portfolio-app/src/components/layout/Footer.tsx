@@ -27,8 +27,8 @@ export default function Footer() {
       />
 
       <div className="px-6" style={{ maxWidth: 1100, margin: "0 auto", paddingTop: 60, paddingBottom: 48 }}>
-        <div style={{ display: "flex", justifyContent: "space-between", flexWrap: "wrap", gap: 48 }}>
-          <div style={{ flex: "0 1 280px" }}>
+        <div style={{ display: "flex", justifyContent: "space-between", flexWrap: "wrap", gap: "clamp(24px, 6vw, 48px)" }}>
+          <div style={{ flex: "0 1 auto", minWidth: "min(100%, 280px)" }}>
             <motion.div
               className="font-bold tracking-[0.35em] text-2xl mb-5"
               style={{ fontFamily: "var(--font-orbitron)" }}

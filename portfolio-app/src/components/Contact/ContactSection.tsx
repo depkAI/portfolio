@@ -10,7 +10,7 @@ function HangingSpiderman({ revealed }: { revealed: boolean }) {
   return (
     <div
       style={{
-        width: 300,
+        width: "clamp(200px, 80vw, 300px)",
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
@@ -52,8 +52,8 @@ function HangingSpiderman({ revealed }: { revealed: boolean }) {
           },
         }}
         style={{
-          width: 220,
-          height: 220,
+          width: "clamp(150px, 50vw, 220px)",
+          height: "clamp(150px, 50vw, 220px)",
           objectFit: "contain",
           transformOrigin: "top center",
           filter: "drop-shadow(0 0 30px rgba(226, 54, 54, 0.4))",
@@ -182,7 +182,7 @@ export default function ContactSection() {
             transition={{ duration: 0.5, delay: 0.1 }}
             style={{
               fontFamily: "'Bebas Neue', sans-serif",
-              fontSize: 64,
+              fontSize: "clamp(2.5rem, 10vw, 4rem)",
               color: "#fff",
               margin: 0,
               lineHeight: 1,
@@ -196,7 +196,7 @@ export default function ContactSection() {
         <div
           style={{
             display: "flex",
-            gap: 48,
+            gap: "clamp(24px, 6vw, 48px)",
             alignItems: "flex-start",
             flexWrap: "wrap",
             justifyContent: "center",
@@ -222,8 +222,8 @@ export default function ContactSection() {
                   transition={{ duration: 0.5 }}
                   onClick={handleReveal}
                   style={{
-                    width: 280,
-                    height: 380,
+                    width: "clamp(220px, 75vw, 280px)",
+                    height: "clamp(300px, 80vw, 380px)",
                     background: "rgba(255,255,255,0.03)",
                     border: "1px solid rgba(255,255,255,0.08)",
                     borderRadius: 16,
@@ -308,7 +308,7 @@ export default function ContactSection() {
                 initial={{ opacity: 0, x: 80 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.7, delay: 0.3, ease: "easeOut" }}
-                style={{ flex: 1, minWidth: 320 }}
+                style={{ flex: 1 }}
               >
                 {!sent ? (
                   <form onSubmit={handleSubmit}>
@@ -316,7 +316,7 @@ export default function ContactSection() {
                     <div
                       style={{
                         display: "grid",
-                        gridTemplateColumns: "1fr 1fr",
+                        gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 200px), 1fr))",
                         gap: 16,
                         marginBottom: 16,
                       }}

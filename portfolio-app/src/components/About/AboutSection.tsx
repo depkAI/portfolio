@@ -105,8 +105,8 @@ export default function AboutSection() {
           <div
             style={{
               display: "grid",
-              gridTemplateColumns: "1fr 1fr",
-              gap: 48,
+              gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 400px), 1fr))",
+              gap: "clamp(24px, 6vw, 48px)",
             }}
             className="about-grid"
           >
@@ -123,8 +123,8 @@ export default function AboutSection() {
               >
                 <div
                   style={{
-                    width: 120,
-                    height: 120,
+                    width: "clamp(80px, 20vw, 120px)",
+                    height: "clamp(80px, 20vw, 120px)",
                     borderRadius: "50%",
                     background: `linear-gradient(135deg, ${RED}, #1a1a2e)`,
                     border: `3px solid ${RED}`,

@@ -416,7 +416,7 @@ const HeroSection: React.FC = () => {
           animate={{ scaleX: 1 }}
           transition={{ delay: 2.4, duration: 0.8, ease: "easeOut" }}
           style={{
-            width: "280px",
+            width: "clamp(180px, 50vw, 280px)",
             height: "3px",
             background: `linear-gradient(90deg, transparent, ${RED}, ${DARK_RED}, transparent)`,
             marginBottom: "1.5rem",
@@ -481,9 +481,9 @@ const HeroSection: React.FC = () => {
             }}
             style={{
               fontFamily: "var(--font-orbitron, 'Orbitron', sans-serif)",
-              fontSize: "0.8rem",
+              fontSize: "clamp(0.65rem, 2vw, 0.8rem)",
               letterSpacing: "0.15em",
-              padding: "0.85rem 2rem",
+              padding: "clamp(0.6rem, 2vw, 0.85rem) clamp(1.2rem, 4vw, 2rem)",
               border: `2px solid ${WEB_WHITE}`,
               borderRadius: "3px",
               background: "transparent",
@@ -510,9 +510,9 @@ const HeroSection: React.FC = () => {
             }}
             style={{
               fontFamily: "var(--font-orbitron, 'Orbitron', sans-serif)",
-              fontSize: "0.8rem",
+              fontSize: "clamp(0.65rem, 2vw, 0.8rem)",
               letterSpacing: "0.15em",
-              padding: "0.85rem 2rem",
+              padding: "clamp(0.6rem, 2vw, 0.85rem) clamp(1.2rem, 4vw, 2rem)",
               border: `2px solid ${RED}`,
               borderRadius: "3px",
               background: RED,
@@ -533,10 +533,10 @@ const HeroSection: React.FC = () => {
           transition={{ delay: 3.4, duration: 0.8 }}
           style={{
             display: "flex",
-            gap: "2.5rem",
+            gap: "clamp(1rem, 4vw, 2.5rem)",
             flexWrap: "wrap",
             justifyContent: "center",
-            padding: "1rem 2rem",
+            padding: "clamp(0.6rem, 2vw, 1rem) clamp(1rem, 3vw, 2rem)",
             background: `${WEB_WHITE}06`,
             border: `1px solid ${WEB_WHITE}10`,
             borderRadius: "4px",
